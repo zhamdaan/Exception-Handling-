@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std ; 
+int main() 
+{   cout<<" menu driven program " ;  
+    cout<<endl<<" choose \n 1. for add \ 2. for sub ";  
+     int choice  ;  
+       cin >> choice  ;  
+        try  {  if (choice!=1&&choice!=2)
+                       {  throw "defaultexeception"  ; 
+                       } 
+        } 
+                       catch (int x)
+                        {  cout << " wont run " ; 
+                        } 
+                         catch (...) 
+                           {  cout<<"enter valid option "; 
+                           }  
+
+    return 0;
+}
