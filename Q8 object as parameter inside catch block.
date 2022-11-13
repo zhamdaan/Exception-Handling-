@@ -1,0 +1,33 @@
+#include<iostream>  
+ using namespace std   ;  
+  class demo 
+      { int a  ;  
+       int  b   ; 
+         public : 
+         int dem () 
+           {  
+                return 0  ; 
+           }   
+      } object; 
+ int main   ( )   
+ {  
+        try  {  
+                      int a  ;  
+                      cin>>a ; 
+                        if (a=1)
+                        throw object ;
+                        else 
+                      cout<<a  ;
+                      
+          } 
+          catch (demo) 
+            {  int a , b  ; 
+             cout<<"enter values for sum "  ;  
+             cin>>a>>b ;  
+              cout<<a+b   ;
+                 } 
+        
+            
+          
+             return 0   ; 
+ }  
