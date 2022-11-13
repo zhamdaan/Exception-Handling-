@@ -1,0 +1,29 @@
+#include<iostream>  
+ using namespace std   ;  
+  
+ int main   ( )   
+ {  
+      try  
+          {   try  {  
+                      int a  ;  
+                      cin>>a ; 
+                        if (a=1)
+                        throw "sum" ;
+                        else 
+                      cout<<a  ;
+                      
+          } 
+          catch (char const*) 
+            {  int a , b  ; 
+             cout<<"enter values for sum "  ;  
+             cin>>a>>b ;  
+              cout<<a+b   ;
+                throw;  } 
+        
+          }  
+          catch (...)  
+             {  cout<<endl<<"rethrow " ;  
+             }    
+             
+             return 0   ; 
+ }  
