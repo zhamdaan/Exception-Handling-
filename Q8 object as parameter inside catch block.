@@ -14,7 +14,7 @@
         try  {  
                       int a  ;  
                       cin>>a ; 
-                        if (a=1)
+                        if (a==1)
                         throw object ;
                         else 
                       cout<<a  ;
