@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std ; 
+int main() 
+{   cout<<" menu driven program " ;  
+    cout<<endl<<" choose \n 1. for add \ 2. for sub ";  
+     int choice  ;  
+       cin >> choice  ;  
+        try  {  if (choice!=1&&choice!=2)
+                       {  throw "defaultexeception"  ; 
+                       } 
+        } 
+                      
+                         catch (...) 
+                           {  cout<<"enter valid option "; 
+                           }  
+                           try {  if  ( choice==1) 
+                                    throw 1 ;
+                           }  
+                            catch (int)
+                             {  int a  ,  b   ;  
+                                 cout<<"enter numbers " ; 
+                                   cin>>a>>b  ;  
+                                       cout<<a+b ;  
+                             } 
+                          try 
+                             {  if(choice==2)
+                                  throw 2  ;  
+                             } 
+                             catch (int) 
+                                {  int a  ,  b   ;  
+                                 cout<<"enter numbers " ; 
+                                   cin>>a>>b  ;  
+                                       cout<<a-b ;  
+                             } 
+
+    return 0;
+}
